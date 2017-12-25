@@ -7,6 +7,14 @@ These instructions will help you get started using the engine.
 ### Models
 We use the assimp JSON format for 3D models. 
 
+### Exporting from Blender
+If you have a 3d model built with Blender, you can export it to .obj. 
+
+Options to select:
+
+![Screenshot](bleder_export.png)
+
+
 #### Converting the models
 You can convert .obj to assimp JSON using  [assimp2json](https://github.com/acgessler/assimp2json). You can use the online
 tool or download the Windows binaries. To convert from .obj to assimp JSON using the Windows program, use:
