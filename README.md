@@ -92,8 +92,16 @@ treeEntity.update();
 treeEntity.draw(shaderProgram);
 ```
 
+#### Infinity mass objects
+These are fixed object, other objects cannot change their location. 
+To achieve these, set the object mass to zero
 
-
+```
+var boxShape = new CANNON.Box(new CANNON.Vec3(0.5, 0.5, 0.3));
+boxBody = new CANNON.Body({ mass: 0 });
+boxBody.addShape(boxShape);
+boxBody.position.set(40, 28, 0.5);
+```
 
 
 
