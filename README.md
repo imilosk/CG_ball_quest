@@ -115,6 +115,9 @@ boxBody.position.set(40, 28, 0.5);
 * WebGL
 * cannon.js
 
+### Credits
+* Background music by PlayOnLoop.com. Licensed under Creative Commons By Attribution 4.0
+
 ### Authors
 * Milos Kostadinovski - [imilosk](https://github.com/imilosk)
 * Domen Antlej - [FaksBoi](https://github.com/FaksBoi)
