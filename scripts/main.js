@@ -119,6 +119,7 @@ var world;
 var p;
 var pCounter = 0;
 var portalEntity;
+var s;
 //
 
 function initCoins(){
@@ -422,7 +423,7 @@ function initCoins(){
 }
 
 //timer
-var timeLeft = 121;
+var timeLeft = 181;
 
 var x = setInterval(function() {
 	timeLeft--;
@@ -527,6 +528,10 @@ function startRender(){
             //var playerEntity = new Entity("ball", models["ball"], textures["snow"], [0, terrain.getHeightOfTerrain(0, 100, terrain), 100]);
             var playerEntity = new Entity("ball", models["ball"], textures["key"], [sphereBody.position.x, sphereBody.position.z, sphereBody.position.y]);
             playerEntity.setScale([0.3, 0.3, 0.3]);
+			
+			//var playerEntity = new Entity("ball", models["ball"], textures["snow"], [0, terrain.getHeightOfTerrain(0, 100, terrain), 100]);
+            var sky = new Entity("sky", models["ball"], textures["sky"], [0,0,0]);
+            sky.setScale([450,450,450]);
 
 			//key
 			kljuc = new Entity("key", models["key"], textures["key"],[boxBody.position.x, boxBody.position.z, boxBody.position.y+1]);
@@ -537,6 +542,8 @@ function startRender(){
 			key = new Key(kljuc, boxBody);		
 			portal = new Portal(portalEntity, p);
 			arrow = new Arrow(a);
+			
+			s = new Portal(sky,p);
 			
 			coins = [];
 			initCoins();
@@ -633,7 +640,10 @@ function startRender(){
 				coins[i].update();
 				coins[i].draw(shaderProgram);
 			}
-
+			
+			s.update();
+			s.draw(shaderProgram);
+			
         }
     }, 16);
 }
