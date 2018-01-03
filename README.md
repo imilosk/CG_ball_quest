@@ -1,5 +1,5 @@
 # Computer Graphics seminar
-
+Game and game engine made for Computer Graphics course. 
 
 ## Using the game engine
 These instructions will help you get started using the engine.
@@ -21,7 +21,7 @@ tool or download the Windows binaries. To convert from .obj to assimp JSON using
 ```
 assimp2json.exe model.obj model.json
 ```
-ATTENTION: use models taht can support only one texture, because the engine does not support multiple textures on one model.
+ATTENTION: use models that can support only one texture, because the engine does not support multiple textures on one model.
 #### Using the models 
 After converting the model, you must do a few more steps to render it in your game world:
 
@@ -69,7 +69,7 @@ this.ambientColor = [0.878, 1, 1];
 this.pointColor = [0.1, 0.0, 0.1];
 this.specularColor = [0.933, 0.510, 0.933];
 ```
-You can change the point light position in the main.js, search for:
+You can change the point light position in the main.js. Search for:
 ```
 light = new Light([0.0, 10000.0, 1000.0]);
 ```
@@ -110,7 +110,12 @@ boxBody = new CANNON.Body({ mass: 0 });
 boxBody.addShape(boxShape);
 boxBody.position.set(40, 28, 0.5);
 ```
+### Built With
+* Javascript
+* WebGL
+* cannon.js
 
-
-
+### Authors
+* Milos Kostadinovski - [imilosk](https://github.com/imilosk)
+* Domen Antlej - [FaksBoi](https://github.com/FaksBoi)
 
