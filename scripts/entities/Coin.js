@@ -14,7 +14,7 @@ Coin.prototype.update = function () {
 	that.body.addEventListener("collide", function () {
 		if(!this.found){
 			coinHit(); // calls function in player to disable jump
-			var audio = new Audio('/res/coin.wav');
+			var audio = new Audio('./res/coin.wav');
 			audio.play();
 			
 			increasePoints();

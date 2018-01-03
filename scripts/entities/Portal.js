@@ -15,7 +15,7 @@ Portal.prototype.update = function () {
 			gOver();
 			document.getElementById("misija").innerText = "";
 			document.getElementById("konec").innerText = "       KONEC IGRE!";
-			var endAudio = new Audio('/res/end.flac');
+			var endAudio = new Audio('./res/end.flac');
 			endAudio.play();
 			this.found=true;
 		}

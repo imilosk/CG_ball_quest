@@ -192,7 +192,7 @@ Player.prototype.jump = function(){
     if (timesPressed == 1){
         //this.sphereBody.velocity.z = 5;
         this.sphereBody.applyImpulse(this.jumpVector, this.sphereBody.position);
-		var audio = new Audio('/res/jump.wav');
+		var audio = new Audio('./res/jump.wav');
 			audio.play();
         timesPressed++;
     }

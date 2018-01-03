@@ -17,7 +17,7 @@ Key.prototype.update = function () {
 			kFound();
 			that.entity.setScale(0,0,0);
 			document.getElementById("misija").innerText = "POIŠČI IZHOD";
-			var keyAudio = new Audio('/res/coin.wav');
+			var keyAudio = new Audio('./res/coin.wav');
 			keyAudio.play();
 			found = true;
 		}

@@ -29,8 +29,8 @@ var lastFrameTime = 0;
 var keyFound = false;
 var gameOver = false;
 var points = 0;
-var bgmusic = new Audio('/res/bgmusic.wav');
-var endmusic = new Audio('/res/end.wav'); //if time runs out
+var bgmusic = new Audio('./res/bgmusic.wav');
+var endmusic = new Audio('./res/end.wav'); //if time runs out
 bgmusic.loop = true;
 
 // load game data
