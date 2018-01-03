@@ -1,9 +1,7 @@
 texturesLoaded = 0;
 
-var texturePaths = ["./res/grassy.png", "./res/house.png",
-                    "./res/person.png", "./res/heightmap2.png",
-                    "./res/snow.png", "./res/terrain01.png",
-                    "./res/myHeightmap.png", "./res/key.png",
+var texturePaths = ["./res/snow.png", "./res/terrain01.png",
+                    "./res/key.png",
 					"./res/portal1.png", "./res/portal2.png",
 					"./res/portal3.png", "./res/portal0.png",
 					"./res/portal4.png", "./res/coin.png"];
