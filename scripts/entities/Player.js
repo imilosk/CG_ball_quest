@@ -12,7 +12,7 @@ function Player(camera, entity, terrain, sphereBody){
     this.rotX = 0;
     this.rotZ = 0;
     this.inputVelocity = new CANNON.Vec3(0, 0, 0);
-    this.jumpVector = new CANNON.Vec3(0, 0, 100);
+    this.jumpVector = new CANNON.Vec3(0, 0, 115);
 
     //this.setUp();
     this.setup();
@@ -43,7 +43,8 @@ var onKeyDown = function ( event ) {
             break;
 
         case 65: // a
-            moveLeft = true; break;
+            moveLeft = true; 
+			break;
 
         case 83: // s
             moveBackward = true;
@@ -168,7 +169,7 @@ Player.prototype.move = function () {
         this.deltaZ = force * dx2;
     }
 
-    console.log(this.sphereBody.quaternion.x);
+    //console.log(this.sphereBody.quaternion.x);
 
     this.inputVelocity.x = this.deltaX;
     this.inputVelocity.y = this.deltaZ;
@@ -176,6 +177,10 @@ Player.prototype.move = function () {
     this.sphereBody.applyImpulse(this.inputVelocity, this.sphereBody.position);
 
 };
+
+function coinHit(){ //disables jump when coin is hit
+	timesPressed = 2;
+}
 
 Player.prototype.jump = function(){
     var that = this;
@@ -187,6 +192,8 @@ Player.prototype.jump = function(){
     if (timesPressed == 1){
         //this.sphereBody.velocity.z = 5;
         this.sphereBody.applyImpulse(this.jumpVector, this.sphereBody.position);
+		var audio = new Audio('/res/jump.wav');
+			audio.play();
         timesPressed++;
     }
 };

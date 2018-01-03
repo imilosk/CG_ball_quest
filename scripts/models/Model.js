@@ -1,6 +1,6 @@
 
 var models = {};
-var modelPaths = ["./res/grass.json", "./res/person.json", "./res/ball.json"];
+var modelPaths = ["./res/grass.json", "./res/ball.json", "./res/key.json", "./res/cylinder.json", "./res/arrow.json", "./res/coin.json"];
 var modelsLoaded = 0;
 
 function initModels() {
