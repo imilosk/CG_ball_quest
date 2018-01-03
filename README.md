@@ -116,7 +116,9 @@ boxBody.position.set(40, 28, 0.5);
 * cannon.js
 
 ### Credits
-* Background music by PlayOnLoop.com. Licensed under Creative Commons By Attribution 4.0
+* Background music and sounds by PlayOnLoop.com. Licensed under Creative Commons By Attribution 4.0
+* Terrain heightmap, ball model and texture by [OneGoldenCat](https://www.youtube.com/channel/UC_7ZpJz9Nr7VnWzbUVIhIeA)
+* Arrow, coin, cylinde and portal models by Domen Antlej - [FaksBoi](https://github.com/FaksBoi)
 
 ### Authors
 * Milos Kostadinovski - [imilosk](https://github.com/imilosk)
