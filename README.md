@@ -74,6 +74,9 @@ You can change the point light position in the main.js. Search for:
 light = new Light([0.0, 10000.0, 1000.0]);
 ```
 
+### Terrain
+The game engine has support for heightmap terrains. Just add your terrain heightmap (.png) to /res folder and import them as texture. 
+
 ### Physics
 The game engine supports physics using the [cannon.js](https://github.com/schteppe/cannon.js/) library. 
 Documentation available [here](http://schteppe.github.io/cannon.js/docs/).
